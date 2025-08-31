@@ -2,7 +2,9 @@
 
 # Staging Interaction
 
-\*\***NAME OF COLLABORATOR HERE**\*\*
+**Om Kamath**
+
+**Group Members**: Thomas K, Rajvi P, Laura M
 
 In the original stage production of Peter Pan, Tinker Bell was represented by a darting light created by a small handheld mirror off-stage, reflecting a little circle of light from a powerful lamp. Tinkerbell communicates her presence through this light to the other characters. See more info [here](https://en.wikipedia.org/wiki/Tinker_Bell). 
 
@@ -72,7 +74,25 @@ _Goals:_ What are the goals of each player? (e.g., jumping to a tree, opening th
 
 The interactive device can be anything *except* a computer, a tablet computer or a smart phone, but the main way it interacts needs to be using light.
 
-\*\***Describe your setting, players, activity and goals here.**\*\*
+**Setting, players, activity and goals**
+- Setting: Road running
+- Players: Runners / Running Enthusiasts
+- Activity: Marathon Training / Hobby Running
+- Goals: To match runners training for the same marathon or following the same route
+
+   ----
+- Setting: The Cafe
+- Players: Cafe customers
+- Activity: Miscellaneous / Consuming cafe food
+- Goals: To match people having same food likings.
+
+   ----
+- Setting: At the station
+- Players: Commuters
+- Activity: Waiting for the bus/tram/train/metro
+- Goals: To match people travelling to the same destination.
+
+
 
 Storyboards are a tool for visually exploring a users interaction with a device. They are a fast and cheap method to understand user flow, and iterate on a design before attempting to build on it. Take some time to read through this explanation of [storyboarding in UX design](https://www.smashingmagazine.com/2017/10/storyboarding-ux-design/). Sketch seven storyboards of the interactions you are planning. **It does not need to be perfect**, but must get across the behavior of the interactive device and the other characters in the scene. 
 
