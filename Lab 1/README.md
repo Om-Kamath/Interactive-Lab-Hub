@@ -176,6 +176,10 @@ Think about the setting of the device: is the environment a place where the devi
 ## Part F. Record
 
 \*\***Take a video of your prototyped interaction.**\*\*
+<a href="https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/Fall2025/Lab%201/Video1.mp4">Video 1</a>
+<a href="https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/Fall2025/Lab%201/Video2.mp4">Video 2</a>
+<a href="https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/Fall2025/Lab%201/Video3.mp4">Video 3</a>
+
 
 \*\***Please indicate who you collaborated with on this Lab.**\*\*
 Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 
