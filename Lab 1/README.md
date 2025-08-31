@@ -4,7 +4,6 @@
 
 **Om Kamath**
 
-**Group Members**: Thomas K, Rajvi P, Laura M
 
 In the original stage production of Peter Pan, Tinker Bell was represented by a darting light created by a small handheld mirror off-stage, reflecting a little circle of light from a powerful lamp. Tinkerbell communicates her presence through this light to the other characters. See more info [here](https://en.wikipedia.org/wiki/Tinker_Bell). 
 
@@ -74,6 +73,8 @@ _Goals:_ What are the goals of each player? (e.g., jumping to a tree, opening th
 
 The interactive device can be anything *except* a computer, a tablet computer or a smart phone, but the main way it interacts needs to be using light.
 
+**Main Goal**: To use matching lights to pair and alert solo users of nearby people with aligning personality parameters (eg. passion, interests, location, region, etc.)
+
 **Setting, players, activity and goals**
 - Setting: Road running
 - Players: Runners / Running Enthusiasts
@@ -98,10 +99,29 @@ Storyboards are a tool for visually exploring a users interaction with a device.
 
 \*\***Include pictures of your storyboards here**\*\*
 
-Present your ideas to the other people in your breakout room (or in small groups). You can just get feedback from one another or you can work together on the other parts of the lab.
+1. Storyboard 1
+![Storyboard 1](https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/5776e42c5a63c6298449c5c195d87f974f0426a9/Lab%201/File%20(1).jpg)
+
+2. Storyboard 2
+![Storyboard 2](https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/5776e42c5a63c6298449c5c195d87f974f0426a9/Lab%201/File%20(2).jpg)
+
+3. Storyboard 3
+![Storyboard 3](https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/f0b51cf7d725a60b923da23b3b99606dc2465153/Lab%201/IMG_3058%20(1).jpg)
+
+4. Storyboard 4
+![Storyboard 4](https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/4c694f7bb000ca061880c2aca79d865794c8d67c/Lab%201/IMG_7306.jpg)
+
+<a href="https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/4c694f7bb000ca061880c2aca79d865794c8d67c/Lab%201/Interactive%20Devices%20.pdf">5. Storyboard 5</a>
+
+6. Storyboard 6
+![Storyboard 6](https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/4c694f7bb000ca061880c2aca79d865794c8d67c/Lab%201/DAD0F3D6-C278-4921-B110-A6D7A186C1A7.png)
 
 \*\***Summarize feedback you got here.**\*\*
+Present your ideas to the other people in your breakout room (or in small groups). You can just get feedback from one another or you can work together on the other parts of the lab.
 
+We discussed about the privacy and security related issues that may arise when strangers misuse this device. Also, we will need to nail the algorithmic matching system and keep a dynamic matching threshold that changes based on the no. of people and level of interest-match. 
+
+The different variants of the wearable device were also a part of our brainstorming session and we took inspiration from a firefly.
 
 ## Part B. Act out the Interaction
 
@@ -109,7 +129,10 @@ Try physically acting out the interaction you planned. For now, you can just pre
 
 \*\***Are there things that seemed better on paper than acted out?**\*\*
 
+Privacy was the biggest loophole that we found in our ideation while acting it out. We decided to have a feature that turns on "ghost mode" in case you do not want to match. 
+
 \*\***Are there new ideas that occur to you or your collaborator that come up from the acting?**\*\*
+Yes, a haptic feedback to alert the users before matching with anyone is something that occurred to us.
 
 
 ## Part C. Prototype the device
@@ -123,6 +146,8 @@ We invented this tool for this lab!
 If you run into technical issues with this tool, you can also use a light switch, dimmer, etc. that you can can manually or remotely control.
 
 \*\***Give us feedback on Tinkerbelle.**\*\*
+
+A really nice tool although can get laggy at times when multiple devices are connected.
 
 
 ## Part D. Wizard the device
@@ -143,6 +168,8 @@ Think about the setting of the device: is the environment a place where the devi
 
 \*\***Include sketches of what your devices might look like here.**\*\*
 
+
+
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
 
 
@@ -153,7 +180,7 @@ Think about the setting of the device: is the environment a place where the devi
 \*\***Please indicate who you collaborated with on this Lab.**\*\*
 Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 
 
-
+**Group Members**: Thomas K (Storyboarding and video direction), Rajvi P (Storyboarding and Brainstorming), Laura M (Product Critique and Actor)
 
 # Staging Interaction, Part 2 
 
