@@ -155,9 +155,12 @@ Take a little time to set up the wizarding set-up that allows for someone to rem
 
 \*\***Include your first attempts at recording the set-up video here.**\*\*
 
+<a href="https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/Fall2025/Lab%201/Setup.mp4"> Setup Video </a>
+
 Now, change the goal within the same setting, and update the interaction with the paper prototype. 
 
 \*\***Show the follow-up work here.**\*\*
+Visible in the interaction video below.
 
 
 ## Part E. Costume the device
