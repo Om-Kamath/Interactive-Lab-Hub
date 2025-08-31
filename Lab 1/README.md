@@ -113,7 +113,7 @@ Storyboards are a tool for visually exploring a users interaction with a device.
 
 <a href="https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/4c694f7bb000ca061880c2aca79d865794c8d67c/Lab%201/Interactive%20Devices%20.pdf">5. Storyboard 5</a>
 
-6. Storyboard 6
+6. Storyboard 6 (AI Generated)
 ![Storyboard 6](https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/4c694f7bb000ca061880c2aca79d865794c8d67c/Lab%201/DAD0F3D6-C278-4921-B110-A6D7A186C1A7.png)
 
 \*\***Summarize feedback you got here.**\*\*
@@ -168,9 +168,23 @@ Think about the setting of the device: is the environment a place where the devi
 
 \*\***Include sketches of what your devices might look like here.**\*\*
 
+![Sketch 1](https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/b966646f0cb66df49b81778da03510d59d8b7e91/Lab%201/Sketch_1.jpg)
 
+![Sketch 2](https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/b966646f0cb66df49b81778da03510d59d8b7e91/Lab%201/Sketch_2.jpg)
+
+**A costume we designed:**
+
+![Costume 1](https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/b966646f0cb66df49b81778da03510d59d8b7e91/Lab%201/Costume_1.JPG)
+
+**AI Generated Inspiration**
+
+![Costume 2](https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/b966646f0cb66df49b81778da03510d59d8b7e91/Lab%201/AI_Image.jpg)
 
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
+
+- This product acts on the assumption that people want to have a conversation or engage only with people they have things in common with 
+- This device uses proximity as a factor, what happens when you match with several people around you? Are the matches queued? Are the strongest matches notified before? 
+- We want a big enough screen for light to be visible
 
 
 ## Part F. Record
