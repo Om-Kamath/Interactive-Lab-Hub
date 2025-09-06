@@ -214,6 +214,10 @@ You will be assigned three partners from other groups. Go to their github pages,
 
 \*\***Summarize feedback from your partners here.**\*\*
 
+- Generally speaking -> Would be a nice fashion statement. Improve upon designs by experimenting with other bugs.
+- Adding a notification / alert layer before glowing or flashing.
+- Use of haptic feedback for privacy. Dynamic haptics to indicate the proximity to the matched person.
+
 ## Make it your own
 
 Do last week’s assignment again, but this time: 
