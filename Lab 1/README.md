@@ -230,6 +230,7 @@ Do last week’s assignment again, but this time:
 **Update:**  
 Decided to use haptics as an additional layer based on feedback. The haptics would allow for greater privacy and heuristics where the vibration frequency would be adjusted and increase as you get closer to the person.
 
+![Graph](https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/542691e18108b03716428d78e405be52e4836368/Lab%201/Generated%20Image%20September%2007%2C%202025%20-%207_15PM.jpeg)
 
 **Storyboards:**
 
