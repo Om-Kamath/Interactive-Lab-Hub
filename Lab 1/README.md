@@ -226,3 +226,23 @@ Do last week’s assignment again, but this time:
 3) We will be grading with an emphasis on creativity. 
 
 \*\***Document everything here. (Particularly, we would like to see the storyboard and video, although photos of the prototype are also great.)**\*\*
+
+**Update:**  
+Decided to use haptics as an additional layer based on feedback. The haptics would allow for greater privacy and heuristics where the vibration frequency would be adjusted and increase as you get closer to the person.
+
+
+**Storyboards:**
+
+Disclaimer: These storyboards are modified/inspired using Gemini Nano Banana.
+
+1. Storyboard 1
+![Updated Storyboard 1](https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/2776d0e5173e916e3b25acfae9578c00d5f01056/Lab%201/storyboard_1_update.jpeg)
+
+2. Storyboard 2
+![Updated Storyboard 2](https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/2776d0e5173e916e3b25acfae9578c00d5f01056/Lab%201/storyboard_2_update.jpeg)
+
+3. Storyboard 3
+![Updated Storyboard 3](https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/2776d0e5173e916e3b25acfae9578c00d5f01056/Lab%201/storyboard_3_update.png)
+
+
+
