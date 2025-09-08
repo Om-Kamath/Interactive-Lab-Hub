@@ -245,5 +245,10 @@ Disclaimer: These storyboards are modified/inspired using Gemini Nano Banana.
 3. Storyboard 3
 ![Updated Storyboard 3](https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/2776d0e5173e916e3b25acfae9578c00d5f01056/Lab%201/storyboard_3_update.png)
 
+**Video Interaction Update:**
+
+<a href="https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/Fall2025/Lab%201/video_haptics.mp4">Video with Haptics</a>
+
+
 
 
