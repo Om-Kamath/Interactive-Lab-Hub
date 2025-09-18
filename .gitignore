@@ -3,4 +3,5 @@
 *.scorer
 venv
 venv*
+.venv
 __*
