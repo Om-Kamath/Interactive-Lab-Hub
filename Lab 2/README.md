@@ -191,8 +191,17 @@ Pro Tip: Using tools like [code-server](https://coder.com/docs/code-server/lates
 ## Part G. 
 ## Sketch and brainstorm further interactions and features you would like for your clock for Part 2.
 
+The Aura smart clock enhances productivity for studying and cooking.
+
+**For Studying:** Its Pomodoro mode and precise timers boost focus and time management, while the minimalist design minimizes distractions and motivational quotes provide encouragement.
+
+**For Cooking:** Easy-to-use timers ensure accurate recipe execution, and the hands-free, durable design makes it practical for a busy kitchen.
+
+#### Prototype 1
+
 ![Prototype](https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/c802bd0e855097efe241ffa9aa690ef001f6d59d/Lab%202/proto.png)
 
+#### Prototype 2
 ![Newer Prototype](https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/c802bd0e855097efe241ffa9aa690ef001f6d59d/Lab%202/proto_with_quotes.png)
 
 # Prep for Part 2
@@ -223,6 +232,7 @@ Please sketch/diagram your clock idea. (Try using a [Verplank digram](http://www
 ## Make a short video of your modified barebones PiClock
 
 \*\*\***Take a video of your PiClock.**\*\*\*
+
 
 After you edit and work on the scripts for Lab 2, the files should be upload back to your own GitHub repo! You can push to your personal github repo by adding the files here, commiting and pushing.
 
