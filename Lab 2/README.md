@@ -1,5 +1,5 @@
 # Interactive Prototyping: The Clock of Pi
-**NAMES OF COLLABORATORS HERE**
+**Om Kamath ok97**
 
 Does it feel like time is moving strangely during this semester?
 
@@ -191,6 +191,9 @@ Pro Tip: Using tools like [code-server](https://coder.com/docs/code-server/lates
 ## Part G. 
 ## Sketch and brainstorm further interactions and features you would like for your clock for Part 2.
 
+![Prototype](https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/c802bd0e855097efe241ffa9aa690ef001f6d59d/Lab%202/proto.png)
+
+![Newer Prototype](https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/c802bd0e855097efe241ffa9aa690ef001f6d59d/Lab%202/proto_with_quotes.png)
 
 # Prep for Part 2
 
