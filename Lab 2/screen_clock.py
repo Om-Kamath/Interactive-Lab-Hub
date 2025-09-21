@@ -136,7 +136,7 @@ def draw_clock():
     # Center the date below time
     date_x = (width - date_width) // 2
     date_y = time_y + time_height + 10
-    p
+    
     # Draw time in white
     draw.text((time_x, time_y), current_time, font=clock_font, fill=(255, 255, 255))
     
