@@ -204,6 +204,15 @@ The Aura smart clock enhances productivity for studying and cooking.
 #### Prototype 2
 ![Newer Prototype](https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/c802bd0e855097efe241ffa9aa690ef001f6d59d/Lab%202/proto_with_quotes.png)
 
+
+#### Storyboard 1 (Timer Mode)
+
+![Storyboard 1](https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/a5dc82bc1a205e0ca754874d9cabe625267f1efb/Lab%202/storyboard1.png)
+
+#### Storyboard 2 (Pomodoro Mode)
+
+![Storyboard 2](https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/a5dc82bc1a205e0ca754874d9cabe625267f1efb/Lab%202/storyboard2.png)
+
 # Prep for Part 2
 
 1. Pick up remaining parts for kit on Thursday lab class. Check the updated [parts list inventory](partslist.md) and let the TA know if there is any part missing.
@@ -222,6 +231,10 @@ Can you make time interactive? You can look in `screen_test.py` for examples for
 
 Please sketch/diagram your clock idea. (Try using a [Verplank digram](http://www.billverplank.com/IxDSketchBook.pdf)!
 
+
+#### Verplank Diagram
+
+![Verplank](https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/a0cdfc99165c8487f2c5400c138bdc48e494bf2b/Lab%202/verplank.jpeg)
 **We strongly discourage and will reject the results of literal digital or analog clock display.**
 
 
@@ -232,7 +245,7 @@ Please sketch/diagram your clock idea. (Try using a [Verplank digram](http://www
 ## Make a short video of your modified barebones PiClock
 
 \*\*\***Take a video of your PiClock.**\*\*\*
-
+[Video Interaction](https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/a0cdfc99165c8487f2c5400c138bdc48e494bf2b/Lab%202/interaction.mp4)
 
 After you edit and work on the scripts for Lab 2, the files should be upload back to your own GitHub repo! You can push to your personal github repo by adding the files here, commiting and pushing.
 
@@ -252,5 +265,38 @@ Modify the code from last week's lab to make a new visual interface for your new
 As always, make sure you document contributions and ideas from others explicitly in your writeup.
 
 You are permitted (but not required) to work in groups and share a turn in; you are expected to make equal contribution on any group work you do, and N people's group project should look like N times the work of a single person's lab. What each person did should be explicitly documented. Make sure the page for the group turn in is linked to your Interactive Lab Hub page. 
+
+
+AI Usage:
+AI has been used to generate images for storyboard and prototypes. The following prompt was used:
+```
+Generate an image for the following:
+
+"To design and prototype a minimalist, iPhone-inspired digital smart clock named "Aura." The device emphasizes intuitive interaction, a clean aesthetic, and productivity-focused features like integrated timers and a dedicated Pomodoro mode. The core philosophy is to blend premium hardware with a fluid software experience, creating a functional piece of art for the modern workspace.
+I. Hardware & Physical Design:
+
+Form Factor: A sleek, rectangular slab with subtly curved corners and a minimal footprint. The design should feel like a single, solid piece, reminiscent of an iPhone's construction.
+Materials: The chassis should be crafted from a single block of bead-blasted aluminum, available in colors like Silver, Space Gray, and a soft Gold.
+Display: An edge-to-edge, high-resolution OLED display. This allows for true blacks, vibrant colors, and wide viewing angles. The bezels must be ultra-thin and perfectly symmetrical on all four sides to maximize the screen-to-body ratio.
+Top Interaction Surface - The "Control Bar": The entire top edge of the clock is a seamless, matte-finish glass surface with integrated capacitive touch controls. There are no physical buttons on the front or top.
+Time-Set Slider: A subtle, horizontally grooved area on the left side of the Control Bar. Users can slide their finger along this groove to intuitively set timer durations. Haptic feedback should provide a satisfying "click" for each minute increment.
+Focus Button (Pomodoro): A single, minimalist icon (e.g., a simple circle or leaf) on the right side of the Control Bar. A single tap instantly starts a pre-configured Pomodoro session. A long press allows for customization of work/break intervals.
+Contextual Icons: Two smaller, softly illuminated icons (e.g., Play/Pause and Settings) may appear in the center of the bar when a mode is active.
+II. Software & User Interface (UI/UX):
+
+Operating System: A custom, lightweight OS designed for fluidity and responsiveness. Animations should be smooth and purposeful, inspired by iOS transitions.
+Default Clock Screen:
+Typography: The time is displayed prominently in the center using a clean, sans-serif font similar to Apple's San Francisco. The font weight should be dynamic, subtly adjusting for optimal legibility based on ambient light.
+Information Hierarchy: Below the time, in a smaller, lighter font, the date is displayed (e.g., "Sunday, September 21"). A small, unobtrusive weather icon and temperature can be shown in a corner.
+"Living" Wallpaper: Instead of a static background, the display features a subtle, dynamic gradient that slowly shifts its color palette throughout the day, mirroring the tones of the sky (e.g., soft whites and blues in the morning, warmer orange and pink hues at sunset, deep indigos at night). This provides a clean, bright feel without being stark white.
+Timer Mode:
+Activation & Interaction: When the user touches the Time-Set Slider, the UI gracefully animates. The clock time shrinks and moves to the top, while a large, bold timer readout (00:00) takes center stage.
+Visual Feedback: As the user slides their finger on the top bar, the numbers on the screen update in real-time.
+Starting the Timer: After setting a time, tapping the Play icon on the Control Bar starts the countdown. The gradient background can shift to a slightly different, focused color scheme.
+Focus (Pomodoro) Mode:
+Activation: Tapping the Focus Button instantly transitions the screen to the Pomodoro interface.
+UI: The display shows the remaining time for the current session (e.g., 24:59). A beautiful, circular progress bar animates around the timer, visually representing the passage of time. The current session type ("Work" or "Break") is clearly labeled.
+Notifications: At the end of a session, a gentle, non-jarring chime will sound, and the screen will display a prompt to begin the next session (e.g., "Time for a 5-minute break")."
+```
 
 
