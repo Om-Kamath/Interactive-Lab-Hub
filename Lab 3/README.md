@@ -1,6 +1,8 @@
 # Chatterboxes
 **Om Kamath ok97**
 
+<details>
+<summary>Description of lab</summary>
 
 [![Watch the video](https://user-images.githubusercontent.com/1128669/135009222-111fe522-e6ba-46ad-b6dc-d1633d21129c.png)](https://www.youtube.com/embed/Q8FWzLMobx0?start=19)
 
@@ -32,9 +34,14 @@ pi@ixe00:~/Interactive-Lab-Hub $ git push
 
 Option 2: On your your own GitHub repo, [create pull request](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2022Fall/readings/Submitting%20Labs.md) to get updates from the class Interactive-Lab-Hub. After you have latest updates online, go on your Pi, `cd` to your `Interactive-Lab-Hub` and use `git pull` to get updates from your own GitHub repo.
 
+</details>
+
+
 ## Part 1.
 ### Setup 
 
+<details>
+<summary>Some things regarding setup</summary>
 Activate your virtual environment
 
 ```
@@ -81,10 +88,16 @@ Typically, a `.sh` file is a shell script which you can execute in a terminal. T
 
 You can also play audio files directly with `aplay filename`. Try typing `aplay lookdave.wav`.
 
+</details>
+
 \*\***Write your own shell file to use your favorite of these TTS engines to have your Pi greet you by name.**\*\*
-(This shell file should be saved to your own repo for this lab.)
+
+[Link to File](https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/Fall2025/Lab%203/speech-scripts/om_intro.sh)
 
 ---
+<details>
+  <summary>TTS instructions</summary>
+  
 Bonus:
 [Piper](https://github.com/rhasspy/piper) is another fast neural based text to speech package for raspberry pi which can be installed easily through python with:
 ```
@@ -148,6 +161,8 @@ and
 python faster_whisper_try.py
 ```
 \*\***Write your own shell file that verbally asks for a numerical based input (such as a phone number, zipcode, number of pets, etc) and records the answer the respondent provides.**\*\*
+
+</details>
 
 ### 🤖 NEW: AI-Powered Conversations with Ollama
 
@@ -216,6 +231,18 @@ answer = ask_ai("How should I greet users?")
 
 \*\***Try creating a simple voice interaction that combines speech recognition, Ollama processing, and text-to-speech output. Document what you built and how users responded to it.**\*\*
 
+## Project: the.newyorker 
+### Description
+
+A handheld device to help travellers get familiar with the New York lingo and responses to day-to-day questions. This is a fun project (parody).
+## Video Demonstration of Prototype:
+
+[video](https://cornell.box.com/shared/static/nl1jfjrijrb78nkyx9c5gc7hp68aqp8j.mov)
+
+
+<details>
+<summary> Serving pages</summary>
+  
 ### Serving Pages
 
 In Lab 1, we served a webpage with flask. In this lab, you may find it useful to serve a webpage for the controller on a remote device. Here is a simple example of a webserver.
@@ -233,12 +260,15 @@ pi@ixe00:~/Interactive-Lab-Hub/Lab 3 $ python server.py
  * Debugger PIN: 162-573-883
 ```
 From a remote browser on the same network, check to make sure your webserver is working by going to `http://<YourPiIPAddress>:5000`. You should be able to see "Hello World" on the webpage.
+</details>
 
 ### Storyboard
 
 Storyboard and/or use a Verplank diagram to design a speech-enabled device. (Stuck? Make a device that talks for dogs. If that is too stupid, find an application that is better than that.) 
 
 \*\***Post your storyboard and diagram here.**\*\*
+
+![storyboard](https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/Fall2025/Lab%203/storyboard.png)
 
 Write out what you imagine the dialogue to be. Use cards, post-its, or whatever method helps you develop alternatives or group responses. 
 
@@ -308,6 +338,7 @@ Answer the following:
 ### How could you use your system to create a dataset of interaction? What other sensing modalities would make sense to capture?
 
 \*\**your answer here*\*\*
+
 
 
 
