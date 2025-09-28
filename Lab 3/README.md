@@ -164,6 +164,10 @@ python faster_whisper_try.py
 
 </details>
 
+<details>
+
+<summary>Ollama Steps</summary>
+
 ### 🤖 NEW: AI-Powered Conversations with Ollama
 
 Want to add intelligent conversation capabilities to your voice projects? **Ollama** lets you run AI models locally on your Raspberry Pi for sophisticated dialogue without requiring internet connectivity!
@@ -227,6 +231,8 @@ def ask_ai(question):
 answer = ask_ai("How should I greet users?")
 ```
 
+</details>
+
 **📖 Complete Setup Guide**: See `OLLAMA_SETUP.md` for detailed instructions, troubleshooting, and advanced usage!
 
 \*\***Try creating a simple voice interaction that combines speech recognition, Ollama processing, and text-to-speech output. Document what you built and how users responded to it.**\*\*
@@ -271,6 +277,7 @@ Storyboard and/or use a Verplank diagram to design a speech-enabled device. (Stu
 \*\***Post your storyboard and diagram here.**\*\*
 
 ![storyboard](https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/Fall2025/Lab%203/storyboard.png)
+![verplank](https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/Fall2025/Lab%203/verplank2.jpeg)
 
 Write out what you imagine the dialogue to be. Use cards, post-its, or whatever method helps you develop alternatives or group responses. 
 
@@ -340,6 +347,7 @@ Answer the following:
 ### How could you use your system to create a dataset of interaction? What other sensing modalities would make sense to capture?
 
 \*\**your answer here*\*\*
+
 
 
 
