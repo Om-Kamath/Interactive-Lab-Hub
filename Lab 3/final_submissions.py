@@ -99,37 +99,6 @@ def say(text, language='en'):
 
 
 
-# def say(text, language='en'):
-#     """Convert text to speech using Google TTS (download before play)."""
-#     encoded_text = urllib.parse.quote_plus(text)
-#     tts_url = f"http://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&q={encoded_text}&tl={language}"
-
-#     try:
-#         # Download the TTS audio to a temp file
-#         with tempfile.NamedTemporaryFile(delete=False, suffix=".mp3") as f:
-#             r = requests.get(tts_url, headers={"User-Agent": "Mozilla/5.0"})
-#             f.write(r.content)
-#             temp_path = f.name
-
-#         # Play the audio file from the start
-#         subprocess.run([
-#             '/usr/bin/mplayer',
-#             '-ao', 'alsa',
-#             '-really-quiet',
-#             '-noconsolecontrols',
-#             temp_path
-#         ], check=True)
-
-#     except subprocess.CalledProcessError as e:
-#         print(f"Error playing audio: {e}")
-#     except FileNotFoundError:
-#         print("Error: mplayer not found. Install with: sudo apt-get install mplayer")
-#     finally:
-#         # Clean up temp file
-#         if 'temp_path' in locals() and os.path.exists(temp_path):
-#             os.remove(temp_path)
-
-
 def main():
     """Main loop for button-triggered AI assistant."""
     button = Button(23)
