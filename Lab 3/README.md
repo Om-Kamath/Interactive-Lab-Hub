@@ -287,7 +287,39 @@ Write out what you imagine the dialogue to be. Use cards, post-its, or whatever 
 
 Find a partner, and *without sharing the script with your partner* try out the dialogue you've designed, where you (as the device designer) act as the device you are designing.  Please record this interaction (for example, using Zoom's record feature).
 
+**(User is detected in Times Square)**
+User Question: "Wow, where should I go from here?"
+
+Device Response: "Anywhere. Literally anywhere but here. You're in a tourist trap. Get out. Walk east, west, I don't care. Just move!"
+
+**(User is trying to get on the subway)**
+User Question: "Which way do I swipe the card?"
+
+Device Response: "The picture tells you! Black stripe down. And do it at a medium speed. Not too slow, not too fast. Go, go, go, people are waiting!"
+
+**(User is at a street food cart)**
+User Question: "What's good here?"
+
+Device Response: "It's a hot dog stand. Get a hot dog. Or a pretzel. It ain't a five-star restaurant. Make a choice."
+
+**(User is blocking the sidewalk)**
+User Question: "What's the rush?"
+
+Device Response: "We live here. We got places to be. Walk on the right, keep it moving. This ain't a vacation for us."
+
+**(User asks for directions)**
+User Question: "Excuse me, how do I get to Brooklyn?"
+
+Device Response: "The bridge is right there, genius. You can walk it. Or take the A, C, F, 2, 3, 4, 5... just get on a train heading downtown. It's a whole borough, you can't miss it."
+
+**(User is at a bodega)**
+User Question: "Can I get a bacon, egg, and cheese?"
+
+Device Response: "Sure. On a roll? Hero? You want salt pepper ketchup? C'mon, spit it out, I ain't got all day."
+
 \*\***Describe if the dialogue seemed different than what you imagined when it was acted out, and how.**\*\*
+
+The responses given by the device weren't super funny at times and took a long time to respond which led to some timeouts. Also while testing users tried to say "please" and that led to AI forgetting the main prompt.
 
 ### Wizarding with the Pi (optional)
 In the [demo directory](./demo), you will find an example Wizard of Oz project. In that project, you can see how audio and sensor data is streamed from the Pi to a wizard controller that runs in the browser.  You may use this demo code as a template. By running the `app.py` script, you can see how audio and sensor data (Adafruit MPU-6050 6-DoF Accel and Gyro Sensor) is streamed from the Pi to a wizard controller that runs in the browser `http://<YouPiIPAddress>:5000`. You can control what the system says from the controller as well!
@@ -301,8 +333,13 @@ For Part 2, you will redesign the interaction with the speech-enabled device usi
 ## Prep for Part 2
 
 1. What are concrete things that could use improvement in the design of your device? For example: wording, timing, anticipation of misunderstandings...
+
+  There should be fallback responses or probing questions to get more information from the user regarding the task.
+   
 2. What are other modes of interaction _beyond speech_ that you might also use to clarify how to interact?
-3. Make a new storyboard, diagram and/or script based on these reflections.
+   
+  If there is a display, there could be shortcuts for navigations and basic help for quick responses.
+  
 
 ## Prototype your system
 
@@ -341,20 +378,22 @@ Try to get at least two people to interact with your system. (Ideally, you would
 Answer the following:
 
 ### What worked well about the system and what didn't?
-\*\**your answer here*\*\*
+
+After switching to gemma 270M, it was able to generate response much quickly however some of the responses sounded half-baked. Also, google TTS takes time to buffer and skips out on first few words.
 
 ### What worked well about the controller and what didn't?
 
-\*\**your answer here*\*\*
+Didn't not use wizarding since I directly got to building the prototype.
 
 ### What lessons can you take away from the WoZ interactions for designing a more autonomous version of the system?
 
-\*\**your answer here*\*\*
+WoZ helps us collect important data and feedback from users before building out a full-fledged system. Results in better design choices.
 
 
 ### How could you use your system to create a dataset of interaction? What other sensing modalities would make sense to capture?
 
-\*\**your answer here*\*\*
+Along with voice, capturing the video and status of user (walking, sitting, running) would be helpful to extract the use-cases.
+
 
 
 
