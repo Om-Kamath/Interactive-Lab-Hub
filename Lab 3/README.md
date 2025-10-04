@@ -313,7 +313,15 @@ The system should:
 
 *Document how the system works*
 
+- Takes input from the user.
+- Runs ollama with phi3 locally (migrated to qwen and gemma foor faster inference).
+- Developed a prompt that would mimic an angry but helpful New Yorker.
+- (Potentially) would have a GPS built-in that would give contextually relevant responses.
+- Using Google TTS generates a voice.
+
 *Include videos or screencaptures of both the system and the controller.*
+
+[video](https://cornell.box.com/shared/static/nl1jfjrijrb78nkyx9c5gc7hp68aqp8j.mov)
 
 <details>
   <summary><strong>Submission Cleanup Reminder (Click to Expand)</strong></summary>
@@ -347,6 +355,7 @@ Answer the following:
 ### How could you use your system to create a dataset of interaction? What other sensing modalities would make sense to capture?
 
 \*\**your answer here*\*\*
+
 
 
 
