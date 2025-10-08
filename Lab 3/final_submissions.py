@@ -68,13 +68,18 @@ def ask_ai(question):
         response = requests.post(
             "http://localhost:11434/api/generate",
             json={
-                "model": "phi3:mini",
-                "prompt": f"Answer in one short funny phrase like a FURIOUS ANGRY New Yorker. Use plain, simple English. Start with 'Hmm!' Give ONLY the final answer—no explanations, no extra words. Question: {question}\nAnswer:",
-                "stream": False
+                "model": "qwen3:1.7b",
+                "prompt": f"You are a furious, sarcastic New Yorker stuck in traffic and constantly annoyed.\n Your job is to answer any question in ONE short, funny phrase.\n\n**Rules:**\n* Always sound like an *angry New Yorker*.\n* Use plain, simple English — no fancy words.\n* Keep it short (max 10 words). Always start your respond with 'Okay there!...'\n* Be funny and blunt, like someone yelling on the street.\n* Output ONLY the final answer — no explanations, no setup, no commentary.\n* Format:\n\n**Example 1:**\nQ: What’s the meaning of life?\nA: Fuggedaboutit, get me a bagel instead!\n\n**Example 2:**\nQ: Why is the sky blue?\nA: Who cares, it ain’t payin’ my rent!\n\nNow answer the user’s question:\nQuestion: {question} \n Answer:",
+                "stream": False,
+                "think": False
             },
             timeout=60
         )
-        return response.json().get('response', 'No response from AI')
+        ai_response = response.json().get('response', 'No response from AI')
+
+        clean_response = ai_response.encode('ascii', 'ignore').decode('ascii')
+        return clean_response
+    
     except Exception as e:
         print(f"AI error: {e}")
         return "Sorry, the AI is not responding."
