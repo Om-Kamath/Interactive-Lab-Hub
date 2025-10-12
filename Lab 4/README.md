@@ -314,17 +314,44 @@ Think about how you want to present the information about what your sensor is se
  
 **\*\*\*Sketch 5 designs for how you would physically position your display and any buttons or knobs needed to interact with it.\*\*\***
 
+A gesture based fan controller
+<img src="https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/7a26c8a52c2d8dbeec0d395bdef009904b1b1143/Lab%204/smart_fan.png">
+
+A motion sensing smart light (proximity)
+<img src="https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/7a26c8a52c2d8dbeec0d395bdef009904b1b1143/Lab%204/smart_light.png">
+
+A smart mirror that uses the capacitive touch pad underneath the mirror surface (capacitive touch)
+<img src="https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/7a26c8a52c2d8dbeec0d395bdef009904b1b1143/Lab%204/smart_mirror.png">
+
+
+
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
+
+Smart mirror: How would I place the capacitive touch beneath the mirror surface since any transparent surface would be an insulator.
+
+Gesture based fan control: How sensitive should the sensing be such that it is not affected by normal motion but at the same time can be activated from far away maybe sitting on the couch.
+
+Motion sensing light: Should be brighter when person is far to light up the entire hallway and as person gets closer to the destination the brightness should decrease.
+
 
 **\*\*\*Pick one of these display designs to integrate into your prototype.\*\*\***
 
+I chose the gesture based fan control.
+
 **\*\*\*Explain the rationale for the design.\*\*\*** (e.g. Does it need to be a certain size or form or need to be able to be seen from a certain distance?)
+
+It should have a base that contains the processing for the gesture activation and a bladeless design such that it looks a lot more futuristic.
 
 Build a cardboard prototype of your design.
 
 
 **\*\*\*Document your rough prototype.\*\*\***
 
+Video: https://cornell.box.com/s/i8dy81gbwnzjgr481vhwx1g2yhk9m3xz
+
+Steps:
+1. Swiping to the left or right would rotate the fan by 30 degrees in the respective direction.
+2. Swiping up or down would rotate the fan to the extreme ends at 180 degrees.
 
 # LAB PART 2
 
