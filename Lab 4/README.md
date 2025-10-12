@@ -16,7 +16,8 @@
 ---
 
 ## Lab 4 Deliverables
-
+<details>
+	<summary>Deliverables</summary>
 ### Part 1 (Week 1)
 **Submit the following for Part 1:**  
 *️⃣ **A. Capacitive Sensing**
@@ -52,15 +53,20 @@
 	- Written summary: what it looks like, works like, acts like
 	- Reflection on what you learned and next steps
 
+</details>
+
 ---
 
 ## Lab Overview
-**NAMES OF COLLABORATORS HERE**
+**Om Kamath ok97**
 
 
 For lab this week, we focus both on sensing, to bring in new modes of input into your devices, as well as prototyping the physical look and feel of the device. You will think about the physical form the device needs to perform the sensing as well as present the display or feedback about what was sensed. 
 
 ## Part 1 Lab Preparation
+
+<details>
+<summary>Preparation</summary>
 
 ### Get the latest content:
 As always, pull updates from the class Interactive-Lab-Hub to both your Pi and your own GitHub repo. As we discussed in the class, there are 2 ways you can do so:
@@ -112,7 +118,7 @@ For submission, the readme.md page for this lab should be edited to include the 
 * Link your Lab 4 readme.md in your main Interactive-Lab-Hub readme.md. 
 * Labs are due on Mondays, make sure to submit your Lab 4 readme.md to Canvas.
 
-
+</details>
 ## Lab Overview
 
 A) [Capacitive Sensing](#part-a)
@@ -150,7 +156,8 @@ F) [Record the interaction](#part-f)
 
 ### Part A
 ### Capacitive Sensing, a.k.a. Human-Twizzler Interaction 
-
+<details>
+	<summary>Twizzler</summary>
 We want to introduce you to the [capacitive sensor](https://learn.adafruit.com/adafruit-mpr121-gator) in your kit. It's one of the most flexible input devices we are able to provide. At boot, it measures the capacitance on each of the 12 contacts. Whenever that capacitance changes, it considers it a user touch. You can attach any conductive material. In your kit, you have copper tape that will work well, but don't limit yourself! In the example below, we use Twizzlers--you should pick your own objects.
 
 
@@ -251,7 +258,11 @@ You can go to the [SparkFun GitHub Page](https://github.com/sparkfun/Qwiic_Proxi
 
 
 Usually, sensors need to be positioned in specific locations or orientations to make them useful for their application. Now that you've tried a bunch of the sensors, pick one that you would like to use, and an application where you use the output of that sensor for an interaction. For example, you can use a distance sensor to measure someone's height if you position it overhead and get them to stand under it.
+</details>
 
+Link to Twizzler demo: https://cornell.box.com/s/md2q6o5h8hkdgm8zhi7ud251ydr4r0ak
+
+Link to Joystick demo: https://cornell.box.com/s/s9r9kx7wd9lexhwhno301duo8exl1oyg
 
 **\*\*\*Draw 5 sketches of different ways you might use your sensor, and how the larger device needs to be shaped in order to make the sensor useful.\*\*\***
 
