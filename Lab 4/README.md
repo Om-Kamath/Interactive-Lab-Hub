@@ -323,6 +323,10 @@ A motion sensing smart light (proximity)
 A smart mirror that uses the capacitive touch pad underneath the mirror surface (capacitive touch)
 <img src="https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/7a26c8a52c2d8dbeec0d395bdef009904b1b1143/Lab%204/smart_mirror.png">
 
+A joystick controlled lamp (joystick)
+<img src="https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/a04121e2b5ff14fbd783091468e23609eff88029/Lab%204/joystick_lamp.jpeg">
+<img src="https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/a04121e2b5ff14fbd783091468e23609eff88029/Lab%204/joystick_lamp_render.png">
+
 
 
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
