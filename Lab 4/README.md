@@ -364,7 +364,8 @@ Steps:
 Following exploration and reflection from Part 1, complete the "looks like," "works like" and "acts like" prototypes for your design, reiterated below.
 
 
-
+<details>
+	<summary>Part 2 Documentation</summary>
 ### Part E
 
 #### Chaining Devices and Exploring Interaction Effects
@@ -527,14 +528,19 @@ For more details and advanced usage, see the [official SparkFun Servo pHAT docum
 A servo motor is a rotary actuator that allows for precise control of angular position. The position is set by the width of an electrical pulse (PWM). You can read [this Adafruit guide](https://learn.adafruit.com/adafruit-arduino-lesson-14-servo-motors/servo-motors) to learn more about how servos work.
 
 ---
-
+</details>
 
 ### Part F
 
 ### Record
 
-Document all the prototypes and iterations you have designed and worked on! Again, deliverables for this lab are writings, sketches, photos, and videos that show what your prototype:
-* "Looks like": shows how the device should look, feel, sit, weigh, etc.
-* "Works like": shows what the device can do
-* "Acts like": shows how a person would interact with the device
+* "Looks like": It is similar to the smart-ottoman shown in class, that would come close to you when you call it using gestures or taps. This smart fan would be directed towards you with gestures. Unfortunately, I do not have a small fan to connect to it but you can imagine it.
+* "Works like": The smart fan can be controlled either with hand using gestures or a joystick. 
+* "Acts like": video demonstration: https://cornell.box.com/s/cgoljssle68gqonq1y532icadomtdlk3
+
+User Testing feedback:
+1. The option to turn on auto-swivel or hand tracking would be nice.
+2. Wireless joystick to sit far from the fan and control it.
+3. A rotary knob to control the speed of swivel.
+
 
