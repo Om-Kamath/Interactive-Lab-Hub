@@ -157,9 +157,9 @@ In an earlier version of this class students experimented with foundational comp
 </details>
 
 #### Video Links
-infer.py: 
-moondream_simple.py:
-hand_pose.py:
+infer.py: https://cornell.box.com/s/pa2yr086sciiy910vm20n9pt9apzyue2
+moondream_simple.py: https://cornell.box.com/s/mhx8oy5icufarfvrzt68e6hh34cnk3wr
+hand_pose.py: https://cornell.box.com/s/bkahctbzho4h5x2yf3zeglxdki07qjdi
 
 ### Part B
 ### Construct a simple interaction.
@@ -172,6 +172,8 @@ hand_pose.py:
 **\*\*\*Describe and detail the interaction, as well as your experimentation here.\*\*\***
 
 I had planned to create a device that can be kept on your window and it will analyse the surroundings and weather to suggest you some food items or recipes to eat. To be specific, it is for me as I usually get confused what should I make for breakfast when I wake up. However, moondream's capabilities seem to be falling short and I will need to experiment with different vision models.
+
+Video Link (Modified Moondream): https://cornell.box.com/s/ihxshp1m1v08ci08yj8mixvda407kl7c
 
 ### Part C
 ### Test the interaction prototype
