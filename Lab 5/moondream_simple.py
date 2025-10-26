@@ -50,8 +50,7 @@ def capture_image(filename="captured_image.jpg"):
     print(f"Image saved as: {filename}")
     return filename
 
-def ask_moondream(image_path, prompt="What do you see in this image? Describe it."):
-    """Ask Moondream about the image with streaming response"""
+def ask_moondream(image_path, prompt="Based on the image, suggest a food I should eat."""):
     
     # Encode image to base64
     with open(image_path, 'rb') as f:

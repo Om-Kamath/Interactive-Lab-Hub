@@ -1,6 +1,6 @@
 # Observant Systems
 
-**NAMES OF COLLABORATORS HERE**
+**Om Kamath ok97**
 
 
 For lab this week, we focus on creating interactive systems that can detect and respond to events or stimuli in the environment of the Pi, like the Boat Detector we mentioned in lecture. 
@@ -39,6 +39,9 @@ D) [Reflect](#part-d)
 ---
 
 ### Part A
+<details>
+<summary>Part A Doc</summary>
+
 ### Play with different sense-making algorithms.
 
 #### Pytorch for object recognition
@@ -151,6 +154,12 @@ Teachable machines provides an audio classifier too. If you want to use audio cl
 
 In an earlier version of this class students experimented with foundational computer vision techniques such as face and flow detection. Techniques like these can be sufficient, more performant, and allow non discrete classification. Find the material here:
 [CV_optional/cv.md](CV_optional/cv.md).
+</details>
+
+#### Video Links
+infer.py: 
+moondream_simple.py:
+hand_pose.py:
 
 ### Part B
 ### Construct a simple interaction.
@@ -162,6 +171,8 @@ In an earlier version of this class students experimented with foundational comp
 
 **\*\*\*Describe and detail the interaction, as well as your experimentation here.\*\*\***
 
+I had planned to create a device that can be kept on your window and it will analyse the surroundings and weather to suggest you some food items or recipes to eat. To be specific, it is for me as I usually get confused what should I make for breakfast when I wake up. However, moondream's capabilities seem to be falling short and I will need to experiment with different vision models.
+
 ### Part C
 ### Test the interaction prototype
 
@@ -171,6 +182,8 @@ For example:
 1. When does it fail?
 1. When it fails, why does it fail?
 1. Based on the behavior you have seen, what other scenarios could cause problems?
+
+It is failing at generating content relevant to the image provided as visible in the video. It returns an empty string.
 
 **\*\*\*Think about someone using the system. Describe how you think this will work.\*\*\***
 1. Are they aware of the uncertainties in the system?
