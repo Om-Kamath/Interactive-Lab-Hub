@@ -185,13 +185,17 @@ For example:
 1. When it fails, why does it fail?
 1. Based on the behavior you have seen, what other scenarios could cause problems?
 
-It is failing at generating content relevant to the image provided as visible in the video. It returns an empty string.
+It is failing at generating content relevant to the image provided as visible in the video. It returns an empty string. It is probably failing due to the inherent lack of capabilities in edge vision models and since suggesting food to eat is a complex task, I decided to transition to qwen2 vision model.
 
 **\*\*\*Think about someone using the system. Describe how you think this will work.\*\*\***
 1. Are they aware of the uncertainties in the system?
+The uncertainties are inconsistency in the food suggestions. If there was a bigger display available, I had planned to also include a recipe of the food suggested.
 1. How bad would they be impacted by a miss classification?
+Not much. It is not a very critical app. 
 1. How could change your interactive system to address this?
+Adding voice input as user interests can improve the suggestions of food.
 1. Are there optimizations you can try to do on your sense-making algorithm.
+Prompt improvements and a higher quality camera.
 
 ### Part D
 ### Characterize your own Observant system
@@ -208,8 +212,20 @@ During the lecture, we mentioned questions to help characterize a material:
 
 **\*\*\*Include a short video demonstrating the answers to these questions.\*\*\***
 
+
+Video link: https://cornell.box.com/s/6sf6vfm8m2k06q2ro899gm5xbh1ntqau
+
 ### Part 2.
 
 Following exploration and reflection from Part 1, finish building your interactive system, and demonstrate it in use with a video.
 
+How does it work:
+1. Captures image via the camera.
+2. Analyzes the image using qwen vision model.
+3. Generates a JSON that contains the food suggestion, description and a dialog for the voice assistant.
+4. Displays the food name and description on the display. 
+5. Uses voice to speak the dialog.
+
 **\*\*\*Include a short video demonstrating the finished result.\*\*\***
+
+Video link: https://cornell.box.com/s/0qr7mtr5snxki0war5xsmi5iy74kb55b

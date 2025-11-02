@@ -64,7 +64,7 @@ def ask_moondream(image_path, prompt="Based on the image, suggest a food I shoul
         response = requests.post(
             "http://localhost:11434/api/generate",
             json={
-                "model": "moondream:latest",
+                "model": "qwen3-vl:235b-cloud",
                 "prompt": prompt,
                 "images": [image_data],
                 "stream": True
