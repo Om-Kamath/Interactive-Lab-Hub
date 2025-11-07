@@ -16,14 +16,14 @@ import uuid
 # MQTT Configuration
 MQTT_BROKER = 'farlab.infosci.cornell.edu'
 MQTT_PORT = 1883
-MQTT_TOPIC = 'IDD/kom/mood'
+MQTT_TOPIC = 'IDD/lab6/morse/coolguys/symbol'
 MQTT_USERNAME = 'idd'
 MQTT_PASSWORD = 'device@theFarm'
 
 # Morse code timing (in seconds)
 DOT_THRESHOLD = 0.3  # Press < 0.3s = DOT
 DASH_THRESHOLD = 0.3  # Press >= 0.3s = DASH
-LETTER_GAP = 1.0      # Pause > 1s = complete letter
+LETTER_GAP = 0.75     # Pause > 0.75s = complete letter and transmit
 MESSAGE_SEND_GAP = 5.0  # Pause > 5s = publish complete message
 
 # Morse code dictionary (reverse lookup)
@@ -40,6 +40,7 @@ MORSE_TO_CHAR = {
 # State tracking
 current_morse = ""
 decoded_message = ""
+morse_symbols = ""  # Track the raw morse symbols for the entire message
 last_signal_time = 0
 message_count = 0
 message_published = False  # Track if current message has been published
@@ -53,14 +54,14 @@ def on_connect(client, userdata, flags, rc):
         print(f"Connection failed with code {rc}")
 
 
-def publish_message(client, message, morse_pattern=""):
-    """Publish a message to the MQTT broker"""
+def publish_message(client, morse_symbols):
+    """Publish morse symbols to the MQTT broker"""
     global message_count
     message_count += 1
     
     payload = json.dumps({
-        'message': message,
-        'morse': morse_pattern,
+        'symbol': morse_symbols,
+        'device_id': 'om',
         'timestamp': time.time(),
         'count': message_count
     })
@@ -68,7 +69,7 @@ def publish_message(client, message, morse_pattern=""):
     result = client.publish(MQTT_TOPIC, payload)
     
     if result.rc == mqtt.MQTT_ERR_SUCCESS:
-        print(f"Published: {message}")
+        print(f"Published symbols: {morse_symbols}")
     else:
         print(f"Publish failed with code {result.rc}")
     
@@ -82,37 +83,29 @@ def decode_morse(morse_pattern):
 
 def process_morse_input(button, mqtt_client):
     """Process button press and convert to morse code"""
-    global current_morse, decoded_message, last_signal_time, message_published
+    global current_morse, decoded_message, morse_symbols, last_signal_time, message_published
     
     # Wait for button press
     if not button.is_button_pressed():
-        # Check if we should complete a letter or publish message
+        # Check if we should complete a letter
         if last_signal_time > 0:
             time_since_last = time.time() - last_signal_time
-            
-            # Publish complete message after 5 second pause
-            if time_since_last > MESSAGE_SEND_GAP and decoded_message and not message_published:
-                print("\n" + "="*60)
-                print("5 SECOND PAUSE DETECTED - PUBLISHING MESSAGE")
-                print("="*60)
-                publish_message(mqtt_client, decoded_message.strip(), "")
-                print(f"Sent: '{decoded_message.strip()}'")
-                print("="*60 + "\n")
-                
-                # Reset for next message
-                decoded_message = ""
-                current_morse = ""
-                message_published = True
-                return
             
             # Complete current letter if there's morse code pending
             if current_morse and time_since_last > LETTER_GAP:
                 char = decode_morse(current_morse)
-                decoded_message += char
+                
+                # Publish immediately for this letter
                 print(f"\n[{current_morse}] = '{char}'")
-                print(f"Word so far: '{decoded_message}'")
+                publish_message(mqtt_client, current_morse)
+                print(f"Transmitted: '{current_morse}' -> '{char}'")
+                
+                # Track for display purposes
+                decoded_message += char
+                morse_symbols += current_morse + " "
+                print(f"Message so far: '{decoded_message}'")
+                
                 current_morse = ""
-                message_published = False  # New content, can publish again
                 print()
         
         return
@@ -149,11 +142,11 @@ def main():
     print("Instructions:")
     print("  - SHORT press (< 0.3s) = DOT (.)")
     print("  - LONG press (>= 0.3s) = DASH (-)")
-    print("  - Pause 1s = Complete letter")
-    print("  - Pause 5s = PUBLISH WORD to MQTT")
+    print("  - Pause 0.75s = Complete letter & TRANSMIT")
     print()
-    print("Example: Press ... --- ... (pause 5s) to send 'SOS'")
-    print("Note: One word at a time, no spaces")
+    print("Example: Press ... (pause 0.75s) -> Transmits 'S'")
+    print("         Press --- (pause 0.75s) -> Transmits 'O'")
+    print("Note: Each letter transmits immediately")
     print("=" * 60)
     print()
     
@@ -211,10 +204,16 @@ def main():
     except KeyboardInterrupt:
         print("\n\nShutting down...")
         
-        # Publish final message if any
+        # Publish final letter if in progress
+        if current_morse.strip():
+            char = decode_morse(current_morse)
+            print(f"\nFinal letter: '{current_morse}' -> '{char}'")
+            publish_message(mqtt_client, current_morse.strip())
+        
+        # Show complete message
         if decoded_message.strip():
-            print(f"\nFinal message: '{decoded_message.strip()}'")
-            publish_message(mqtt_client, decoded_message.strip(), current_morse)
+            print(f"\nComplete message sent: '{decoded_message.strip()}'")
+            print(f"All symbols: '{morse_symbols.strip()}'")
             
     finally:
         my_button.LED_off()

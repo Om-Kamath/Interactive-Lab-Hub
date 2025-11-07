@@ -15,9 +15,20 @@ from collections import deque
 # MQTT Configuration
 MQTT_BROKER = 'farlab.infosci.cornell.edu'
 MQTT_PORT = 1883
-MQTT_TOPIC = 'IDD/kom/mood'
+MQTT_TOPIC = 'IDD/lab6/morse/coolguys/symbol'
 MQTT_USERNAME = 'idd'
 MQTT_PASSWORD = 'device@theFarm'
+
+# Morse code dictionary for decoding
+MORSE_TO_CHAR = {
+    '.-': 'A', '-...': 'B', '-.-.': 'C', '-..': 'D', '.': 'E', '..-.': 'F',
+    '--.': 'G', '....': 'H', '..': 'I', '.---': 'J', '-.-': 'K', '.-..': 'L',
+    '--': 'M', '-.': 'N', '---': 'O', '.--.': 'P', '--.-': 'Q', '.-.': 'R',
+    '...': 'S', '-': 'T', '..-': 'U', '...-': 'V', '.--': 'W', '-..-': 'X',
+    '-.--': 'Y', '--..': 'Z', '-----': '0', '.----': '1', '..---': '2',
+    '...--': '3', '....-': '4', '.....': '5', '-....': '6', '--...': '7',
+    '---..': '8', '----.': '9'
+}
 
 # Display setup
 try:
@@ -84,7 +95,7 @@ def setup_display():
         return None, None, None
 
 
-def update_display(disp, message, morse_code="", msg_count=0):
+def update_display(disp, message, symbols="", msg_count=0):
     """Update the MiniPiTFT display with the current message"""
     if not disp:
         return
@@ -119,14 +130,14 @@ def update_display(disp, message, morse_code="", msg_count=0):
         # Separator line
         draw.line((0, 25, width, 25), fill=(255, 255, 255), width=2)
         
-        # Display morse code pattern if available
-        if morse_code:
+        # Display morse symbols if available
+        if symbols:
             y_pos = 35
-            draw.text((5, y_pos), "Morse:", font=font_small, fill=(150, 150, 150))
-            draw.text((60, y_pos), morse_code, font=font_small, fill=(255, 200, 0))
+            draw.text((5, y_pos), "Symbols:", font=font_small, fill=(150, 150, 150))
+            draw.text((70, y_pos), symbols, font=font_small, fill=(255, 200, 0))
         
         # Main message (word-wrapped and centered)
-        y_pos = 60 if morse_code else 50
+        y_pos = 60 if symbols else 50
         
         if message:
             # Word wrap the message
@@ -174,6 +185,19 @@ def on_connect(client, userdata, flags, rc):
         print(f"Connection failed with code {rc}")
 
 
+def decode_morse_symbols(symbols_string):
+    """Decode a string of morse symbols separated by spaces into text"""
+    if not symbols_string:
+        return ""
+    
+    letters = symbols_string.split()
+    decoded = ""
+    for letter_code in letters:
+        char = MORSE_TO_CHAR.get(letter_code, '?')
+        decoded += char
+    return decoded
+
+
 def on_message(client, userdata, msg):
     """Callback when a message is received"""
     global current_message, message_count
@@ -181,19 +205,21 @@ def on_message(client, userdata, msg):
     try:
         payload = json.loads(msg.payload.decode('utf-8'))
         
-        message = payload.get('message', 'N/A')
-        morse = payload.get('morse', '')
+        # Get symbols from payload and decode them
+        symbols = payload.get('symbols', '')
+        decoded_message = decode_morse_symbols(symbols)
+        
         timestamp = time.strftime('%H:%M:%S', time.localtime(payload.get('timestamp', time.time())))
         count = payload.get('count', 0)
         
         # Update global state
-        current_message = message
+        current_message = decoded_message
         message_count = count
         
         # Add to history
         message_history.append({
-            'message': message,
-            'morse': morse,
+            'message': decoded_message,
+            'symbols': symbols,
             'timestamp': timestamp,
             'count': count
         })
@@ -202,16 +228,15 @@ def on_message(client, userdata, msg):
         print("\n" + "="*60)
         print(f"Message Received at {timestamp}")
         print("="*60)
-        if morse:
-            print(f"Morse Code:  {morse}")
-        print(f"Decoded:     {message}")
+        print(f"Symbols:     {symbols}")
+        print(f"Decoded:     {decoded_message}")
         print(f"Count:       #{count}")
         print("="*60 + "\n")
         
         # Update display
         disp = userdata.get('display')
         if disp:
-            update_display(disp, message, morse, count)
+            update_display(disp, decoded_message, symbols, count)
         
     except json.JSONDecodeError:
         print(f"\nRaw Message: {msg.payload.decode('utf-8')}\n")
