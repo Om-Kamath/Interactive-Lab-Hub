@@ -41,6 +41,8 @@ This project is interesting because it transforms simple tactile inputs (button 
 - Hardware, connections, data flow
 - Label input/computation/output
 
+<img src="https://github.com/Om-Kamath/Interactive-Lab-Hub/blob/88d92294263031d6eee4de1daec5f72a943ebb2f/Lab%206/image%20(1).png"/>
+
 ### **3. Build Documentation**
 
 **Devices:**<br>
