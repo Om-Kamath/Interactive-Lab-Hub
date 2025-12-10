@@ -45,8 +45,15 @@ Group: Karl Muller (km2262), Om Kamath (ok97)
 ### Functioning project
 
 ### Documentation of design process
+We wanted to create something similar to products by Divoom (https://divoom.com/) and did not want to the interaction to rely on the touch screen since the screen real-estate was really small. 
 
+We decided to integrate a rotary encoder to it and make the navigation based on scroll-and-click functionality.
+
+Our first prototype sketch was something like this:
 ![Design Prototype 1](./design-railready.png)
+
+We then generated a 3D render of it using Gemini Nano Banana Pro.
+![Final design Prototype](./final-proto.png)
 
 4. Archive of all code, design patterns, etc. used in the final design. (As with labs, the standard should be that the documentation would allow you to recreate your project if you woke up with amnesia.)
 5. Video of someone using your project
