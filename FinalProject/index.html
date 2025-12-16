@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subway Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+
+<body>
+    <div class="dashboard-carousel">
+        <!-- Screen 1: Dashboard (Clock, Weather, Schedule) -->
+        <div class="screen-section active" id="screen-1">
+            <!-- Summary View (default) -->
+            <div class="summary-view">
+                <div class="clock-section clock-large">
+                    <div id="current-time">--:--</div>
+                    <div id="current-date">Loading...</div>
+                </div>
+                <div class="weather-section weather-large" id="weather-widget">
+                    <!-- Weather injected here -->
+                </div>
+                <div class="hint-text">Press to see schedule</div>
+            </div>
+            
+            <!-- Detail View (on click) -->
+            <div class="detail-view" style="display: none;">
+                <div class="clock-section clock-small">
+                    <div id="small-clock">--:--</div>
+                </div>
+                <div class="schedule-section">
+                    <div class="schedule-header">
+                        <h2>Upcoming</h2>
+                        <div class="auth-buttons">
+                            <button id="google-login-btn" class="signin-btn" disabled>Sign in</button>
+                            <button id="google-signout-btn" class="signout-btn" style="display: none;" disabled>Sign out</button>
+                        </div>
+                    </div>
+                    <div id="schedule-status" class="schedule-status"></div>
+                    <div class="event-list" id="event-list">
+                        <!-- Events injected here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Screen 2: Status (Train Info) -->
+        <div class="screen-section" id="screen-2">
+            <!-- Summary View (default) -->
+            <div class="summary-view">
+                <div class="leave-info leave-info-large">
+                    <span class="label">Time to Leave</span>
+                    <div class="leave-timer leave-timer-large" id="leave-timer">--:--</div>
+                    <div class="leave-subtext leave-subtext-large" id="leave-countdown">Calculating...</div>
+                    <div class="event-title" id="active-event-title">No event selected</div>
+                </div>
+                <div class="train-badge-large">
+                    <div class="line-badge-large" id="line-badge">F</div>
+                    <div class="line-separator" id="line-separator">→</div>
+                    <div class="line-badge-large" id="line-badge-2" style="display:none;">-</div>
+                </div>
+            </div>
+            
+            <!-- Detail View (on click) -->
+            <div class="detail-view" style="display: none;">
+                <div class="status-card">
+                    <div class="leave-info">
+                        <span class="label">Time to Leave</span>
+                        <div class="leave-timer" id="leave-timer-detail">--:--</div>
+                        <div class="leave-subtext" id="leave-countdown-detail">Calculating...</div>
+                    </div>
+
+                    <div class="train-summary">
+                        <div class="train-header-row">
+                            <div class="line-badge-small" id="line-badge-detail">F</div>
+                            <div class="service-status" id="service-status">Checking...</div>
+                        </div>
+                        <div class="train-text">
+                            <div id="direction">Manhattan-bound</div>
+                            <div class="departs-at">Departs <span id="departure-time">--:--</span></div>
+                        </div>
+                        <div class="route-extra">
+                            <div class="detail-line" id="route-line-detail">Awaiting plan</div>
+                            <div class="detail-line" id="transfer-detail">No transfers</div>
+                            <div class="detail-line" id="arrival-detail">Arrival --:--</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="access-stats">
+                    <div class="stat">
+                        <span class="icon">🚶</span>
+                        <span id="walking-time">-- min</span>
+                        <span class="stat-label">Walk</span>
+                    </div>
+                    <div class="stat">
+                        <span class="icon">📏</span>
+                        <span id="walking-dist">-- m</span>
+                        <span class="stat-label">Distance</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Screen 3: Route (Stops) -->
+        <div class="screen-section" id="screen-3">
+            <!-- Summary View (default) -->
+            <div class="summary-view">
+                <div class="route-summary">
+                    <div class="stops-count" id="stops-count">-- stops</div>
+                    <div class="route-endpoint" id="route-endpoint">to --</div>
+                </div>
+                <div class="hint-text">Press to see route</div>
+            </div>
+            
+            <!-- Detail View (on click) -->
+            <div class="detail-view" style="display: none;">
+                <div class="stop-fullscreen">
+                    <div class="stop-line-badge" id="stop-line-badge">-</div>
+                    <div class="stop-name-large" id="current-stop-name">Select a route</div>
+                    <div class="stop-meta">
+                        <div id="stop-position">--</div>
+                        <div id="stop-transfer">No transfer</div>
+                    </div>
+                    <div class="stop-next-hint" id="stop-next-hint">→</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Indicators -->
+    <div class="nav-indicators">
+        <div class="dot active" data-screen="1"></div>
+        <div class="dot" data-screen="2"></div>
+        <div class="dot" data-screen="3"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
