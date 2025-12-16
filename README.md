@@ -1,4 +1,5 @@
 # Om's-Lab-Hub
+
 for [Interactive Device Design](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/)
 
 Please place links here to the README.md's for each of your labs here:
@@ -16,7 +17,6 @@ Please place links here to the README.md's for each of your labs here:
 
 [Lab 6. Little Interactions Everywhere](Lab%206/)
 
-[Final Project](https://github.com/IRL-CT/Developing-and-Designing-Interactive-Devices/blob/2025Fall/FinalProject.md)
+[Final Project](FinalProject/)
 
 Online Repository
-
